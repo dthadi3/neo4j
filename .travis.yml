@@ -1,0 +1,11 @@
+arch: 
+  - amd64
+  - ppc64le
+language: java
+os: linux
+dist: bionic
+before_install:
+  - sudo apt install maven openjdk-11-jdk
+  - export MAVEN_OPTS="-Xmx512m"
+install:
+  - mvn clean install
