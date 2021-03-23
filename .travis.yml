@@ -4,8 +4,9 @@ arch:
 language: java
 os: linux
 dist: bionic
+jdk: openjdk11
 before_install:
-  - sudo apt install openjdk-11-jdk maven -y
+  - sudo apt install maven -y
   - export MAVEN_OPTS="-Xmx512m"
 install:
   - mvn clean install
