@@ -6,7 +6,7 @@ os: linux
 dist: bionic
 jdk: openjdk11
 before_install:
-  - sudo apt install maven -y
+#  - sudo apt install maven -y
   - export MAVEN_OPTS="-Xmx512m"
-install:
-  - mvn clean install
+#install:
+#  - mvn clean install
